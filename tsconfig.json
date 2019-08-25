@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "outDir": "./dist",
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "strict": true,
+      "allowJs": true,
+      "types": [
+          "node",
+          "sequelize",
+          "jest"
+      ]
+  },
+  "include": [
+      "./src/app/*",
+      "./src/app/**/*",
+      "./src/config/*",
+      "./src/*.ts"
+  ],
+  "exclude": [
+      "node_modules",
+      "./src/database/exports",
+      "./src/docs"
+  ]
+}
